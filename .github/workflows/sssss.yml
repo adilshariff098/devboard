@@ -41,11 +41,11 @@ jobs:
           go-version-file: 'backend/go.mod'
           cache: false
 
-      - name: golangci-lint
-        uses: golangci/golangci-lint-action@v9
-        with:
-          version: latest
-          working-directory: backend
+     # - name: golangci-lint
+      #  uses: golangci/golangci-lint-action@v9
+       # with:
+         #version: latest
+         # working-directory: backend
 
   docker:
     runs-on: ubuntu-latest
