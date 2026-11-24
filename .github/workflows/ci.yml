@@ -2,11 +2,11 @@
 # then Push the images to DockerHub 
 name: CI
 
-on: 
+#on: 
     push:
         branches: [advanced]
 
-jobs:
+#jobs:
     frontend:
         # Github runner
         runs-on: ubuntu-latest
