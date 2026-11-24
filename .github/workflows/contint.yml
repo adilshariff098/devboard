@@ -2,13 +2,13 @@ name: continuous integration
 
 on: 
   push:
-  branches: [advanced]
+    branches: [advanced]
 
 
 jobs:
 
   frontend:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
   
     steps:
       - name: code checkout
@@ -27,7 +27,7 @@ jobs:
         run: npm run lint
 
   backend:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: code checkout
@@ -45,6 +45,7 @@ jobs:
 
 
   docker:
+    runs-on: ubuntu-latest
     needs: [frontend,backend]
 
     steps:
