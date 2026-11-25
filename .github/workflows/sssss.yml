@@ -40,7 +40,8 @@ jobs:
         with:
           go-version-file: 'backend/go.mod'
           cache: false
-      - name:
+          
+      - name: 'lint'
         run: cd backend && go vet
 
   docker:
